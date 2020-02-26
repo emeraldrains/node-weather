@@ -52,8 +52,8 @@ app.get('/weather', (req, res) => {
     }
 
     geocode(req.query.address).then((data) => {
-        forecast(data).then((data) => {
-            res.send(data);
+        forecast(data).then((forecastData) => {
+            res.send(forecastData);
         });
     });
 

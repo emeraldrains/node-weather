@@ -26,7 +26,7 @@ const forecast = async (address) => {
       location,
       currentTemp,
       rainProb,
-      today
+      today,
     };
   } catch (err) {
     console.log(err);
